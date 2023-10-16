@@ -4,8 +4,8 @@ import "fmt"
 
 // Dependency inversion principle
 
-
 type Relationship int
+
 const (
 	Parent Relationship = iota
 	Child
@@ -17,8 +17,8 @@ type Person struct {
 }
 
 type Info struct {
-	from *Person
-	to *Person
+	from         *Person
+	to           *Person
 	relationship Relationship
 }
 
@@ -34,13 +34,13 @@ func (r *Relationships) FindAllChildrenOf(name string) []*Person {
 	result := make([]*Person, 0)
 	for _, relation := range r.relations {
 		if relation.relationship == Child && relation.to.name == name {
-			result = append(result, relation.from) 
+			result = append(result, relation.from)
 		}
 	}
 	return result
 }
 
-func (r *Relationships) AddParentAndChild(parent, child *Person){
+func (r *Relationships) AddParentAndChild(parent, child *Person) {
 	r.relations = append(r.relations, Info{parent, child, Parent})
 	r.relations = append(r.relations, Info{child, parent, Child})
 }
@@ -55,7 +55,7 @@ func (r *Research) Investigate() {
 	}
 }
 
-func run_dip() {
+func RunDip() {
 	parent := &Person{"John"}
 	child1 := &Person{"Chris"}
 	child2 := &Person{"Matt"}

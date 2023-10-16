@@ -2,9 +2,11 @@ package main
 
 func main() {
 	println("OCP")
-	run_ocp()
+	RunOcp()
 	println()
 	println("DIP")
-	run_dip()
+	RunDip()
+	println()
+	RunBuilder()
 	println()
 }
