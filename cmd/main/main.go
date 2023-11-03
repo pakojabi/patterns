@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/pakojabi/patterns/cmd/main/bridge"
 	"github.com/pakojabi/patterns/cmd/main/composite"
+	"github.com/pakojabi/patterns/cmd/main/decorator"
 	"github.com/pakojabi/patterns/cmd/main/factory"
 )
 
@@ -31,5 +32,8 @@ func main() {
 	println()
 	println("Composite - Neural network")
 	composite.RunNeurons()
+	println()
+	println("Decorator")
+	decorator.RunDecorator()
 	println()
 }
