@@ -1,5 +1,10 @@
 package main
-import "github.com/pakojabi/patterns/cmd/main/factory"
+
+import (
+	"github.com/pakojabi/patterns/cmd/main/bridge"
+	"github.com/pakojabi/patterns/cmd/main/composite"
+	"github.com/pakojabi/patterns/cmd/main/factory"
+)
 
 func main() {
 	println("OCP")
@@ -20,5 +25,11 @@ func main() {
 	println()
 	println("Prototype Factory")
 	factory.RunPrototypeFactory()
+	println()
+	println("Bridge")
+	bridge.RunBridge()
+	println()
+	println("Composite - Neural network")
+	composite.RunNeurons()
 	println()
 }
