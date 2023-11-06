@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/pakojabi/patterns/cmd/main/bridge"
+	chainofresposibility "github.com/pakojabi/patterns/cmd/main/chain_of_resposibility"
 	"github.com/pakojabi/patterns/cmd/main/composite"
 	"github.com/pakojabi/patterns/cmd/main/decorator"
 	"github.com/pakojabi/patterns/cmd/main/factory"
@@ -35,5 +36,8 @@ func main() {
 	println()
 	println("Decorator")
 	decorator.RunDecorator()
+	println()
+	println("Chain of Responsibility - Method chain")
+	chainofresposibility.RunMethodChain()
 	println()
 }
