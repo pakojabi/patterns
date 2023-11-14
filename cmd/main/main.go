@@ -40,4 +40,7 @@ func main() {
 	println("Chain of Responsibility - Method chain")
 	chainofresposibility.RunMethodChain()
 	println()
+	println("Chain of Responsibility - Broker chain")
+	chainofresposibility.RunBrokerChain()
+	println()
 }
