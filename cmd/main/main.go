@@ -6,6 +6,7 @@ import (
 	"github.com/pakojabi/patterns/cmd/main/composite"
 	"github.com/pakojabi/patterns/cmd/main/decorator"
 	"github.com/pakojabi/patterns/cmd/main/factory"
+	"github.com/pakojabi/patterns/cmd/main/observer"
 )
 
 func main() {
@@ -42,5 +43,8 @@ func main() {
 	println()
 	println("Chain of Responsibility - Broker chain")
 	chainofresposibility.RunBrokerChain()
+	println()
+	println("Observer")
+	observer.RunObserver()
 	println()
 }
