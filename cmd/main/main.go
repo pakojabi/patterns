@@ -7,6 +7,8 @@ import (
 	"github.com/pakojabi/patterns/cmd/main/decorator"
 	"github.com/pakojabi/patterns/cmd/main/factory"
 	"github.com/pakojabi/patterns/cmd/main/observer"
+	"github.com/pakojabi/patterns/cmd/main/state"
+	"github.com/pakojabi/patterns/cmd/main/visitor"
 )
 
 func main() {
@@ -46,5 +48,14 @@ func main() {
 	println()
 	println("Observer")
 	observer.RunObserver()
+	println()
+	println("State (Classic)")
+	state.RunClassicState()
+	println()
+	// println("State (Handmade)")
+	// state.RunHandmadeState()
+	// println()
+	println("Visitor (Classic)")
+	visitor.RunClassicVisitor()
 	println()
 }
